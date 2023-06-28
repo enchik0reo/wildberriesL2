@@ -1,0 +1,4 @@
+﻿Name:Company:Price
+Item1/Company1/60000$
+Item2 Company2 70000$
+Item3	Company3	90000$

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    input {
+        margin-top: 4%;
+        line-height: 2;
+    }
+    .text {
+        text-align: center;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+</head>
+<body>
+
+<form class="text" method="POST" action="create_event">
+    <input type="date" name="date">
+    <input placeholder="Describe event" type="text" name="msg">
+    <input type="submit" value="Create event">
+</form>
+
+<form class="text" method="POST" action="update_event">
+    <input placeholder="Enter event id" type="text" name="id">
+    <input type="date" name="date">
+    <input placeholder="Describe event" type="text" name="msg">
+    <input type="submit" value="Update event">
+</form>
+
+<form class="text" method="POST" action="delete_event">
+    <input placeholder="Enter event id" type="text" name="id">
+    <input type="submit" value="Delete event">
+</form>
+
+<form class="text" method="GET" action="events_for_day">
+    <input type="date" name="date">
+    <input type="submit" value="Events for day">
+</form>
+
+<form class="text" method="GET" action="events_for_week">
+    <input type="date" name="date">
+    <input type="submit" value="Events for week">
+</form>
+
+<form class="text" method="GET" action="events_for_month">
+    <input type="date" name="date">
+    <input type="submit" value="Events for month">
+</form>
+</body>
+</html>
